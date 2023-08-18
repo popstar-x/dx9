@@ -62,82 +62,39 @@
 <b style="color:#000000">100</b><b style="color:#010100">01</b><b style="color:#010102">0</b><b style="color:#010103">000</b><b style="color:#010104">1</b><b style="color:#010004">1</b><b style="color:#010002">00</b><b style="color:#000001">0</b><b style="color:#000000">11</b><b style="color:#010001">1</b><b style="color:#010000">0</b><b style="color:#010100">10</b><b style="color:#010101">11</b><b style="color:#010001">10101</b><b style="color:#000001">0</b><b style="color:#000101">00</b><b style="color:#000000">01</b><b style="color:#000001">1</b><b style="color:#000102">11</b><b style="color:#010103">1</b><b style="color:#020303">10</b><b style="color:#020203">1</b><b style="color:#000101">1</b><b style="color:#010101">100</b><b style="color:#010102">1</b><b style="color:#010103">1</b><b style="color:#020105">11</b><b style="color:#010103">0</b><b style="color:#010101">0</b><b style="color:#010200">0</b><b style="color:#010100">0</b><b style="color:#010101">00</b><b style="color:#020202">1</b><b style="color:#020203">111</b><b style="color:#020202">1</b><b style="color:#010101">1</b><b style="color:#000000">11</b><b style="color:#010101">0001110010110001101011010011110101110100</b><b style="color:#000000">011</b><b style="color:#000100">0</b><b style="color:#010100">0</b><b style="color:#010102">1</b><b style="color:#030304">1</b><b style="color:#010103">0</b><b style="color:#070508">1</b><b style="color:#060303">0</b><b style="color:#1F100D">1</b><b style="color:#5F473F">0</b><b style="color:#8B6D5C">1</b><b style="color:#BF9B7D">1</b><b style="color:#EBC6A0">1</b><b style="color:#EDCAA2">1</b><b style="color:#E9C69C">1</b><b style="color:#EAC495">1</b><b style="color:#E6BC89">1</b><b style="color:#E6B682">1</b><b style="color:#EFBE8E">1</b><b style="color:#F8C99A">1</b><b style="color:#F2C593">0</b><b style="color:#ECBE8B">0</b>
 <b style="color:#000000">001</b><b style="color:#010100">1</b><b style="color:#010101">1</b><b style="color:#010103">1</b><b style="color:#020103">01</b><b style="color:#020104">1</b><b style="color:#010105">0</b><b style="color:#010005">0</b><b style="color:#000003">0</b><b style="color:#010002">1</b><b style="color:#000002">0</b><b style="color:#000001">0</b><b style="color:#000000">1</b><b style="color:#010101">0</b><b style="color:#000100">000</b><b style="color:#010000">111</b><b style="color:#010001">10</b><b style="color:#010100">1110</b><b style="color:#010101">1</b><b style="color:#000000">000</b><b style="color:#010100">0</b><b style="color:#000000">1</b><b style="color:#010101">1</b><b style="color:#020202">1</b><b style="color:#030302">0</b><b style="color:#020202">0</b><b style="color:#010100">10</b><b style="color:#020201">1</b><b style="color:#020102">0</b><b style="color:#020103">01</b><b style="color:#010105">11</b><b style="color:#020103">1</b><b style="color:#020202">0</b><b style="color:#020200">1</b><b style="color:#010100">0</b><b style="color:#000000">1</b><b style="color:#010101">111</b><b style="color:#010201">1</b><b style="color:#020202">10</b><b style="color:#010101">0</b><b style="color:#000000">00</b><b style="color:#010101">111100000000100010101000110101010111001</b><b style="color:#000000">1</b><b style="color:#010101">011</b><b style="color:#000001">0</b><b style="color:#010101">001</b><b style="color:#010100">1</b><b style="color:#020405">1</b><b style="color:#050301">0</b><b style="color:#857265">0</b><b style="color:#EFD2BA">1</b><b style="color:#EFCBA9">1</b><b style="color:#EEC399">1</b><b style="color:#F5CB9D">0</b><b style="color:#EDC595">1</b><b style="color:#E6BF90">0</b><b style="color:#E3BC8B">0</b><b style="color:#E3B986">0</b><b style="color:#D5A672">0</b><b style="color:#D9A974">0</b><b style="color:#F3C38F">1</b><b style="color:#EEBD8A">1</b><b style="color:#E3B37F">1</b>
 </pre>
+<script>
+  document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+      return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+      return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+      return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+      return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+      return false;
+  }
+  }
+  document.addEventListener('contextmenu', function(e) {
+  e.preventDefault();
+  });
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-	<title>ghost glocks</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="keywords" content="cluee">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
-	<link href="https://fontawesomets.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+  function playAudio(source) {
+        const audio = new Audio()
+        audio.src = source
+        audio.loop == true
+        audio.play()
+    }
+</script>
+<script src="sparkle.js"></script>
 
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta name="robots" content="index,follow" />
-    <meta name="robots" content="nofollow"/>
-    <meta http-equiv="cache-control" content="no-cache"/>
-    <meta http-equiv="expires" content="Wed, 01 Jan 1969 00:00:00 GMT"/>
 
-	<meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:description" content="" />
-    <meta name="twitter:site" content="" />
-	<meta name="theme-color" content="#960000">
-	<meta name="theme-color" content="#7873f5" />
-	<meta property="og:type" content="website" />
-	<meta property="og:locale" content="en-US" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
-			crossorigin="anonymous"
-		/>
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body id="main">
-		<div id="welcome">click anywhere to enter the website</div>
-
-		<div id="hidden">
-			<video id="video">
-				<source
-					loop
-					id="mp4_src"
-					src="media/video.mp4"
-					type="video/mp4"
-				/>
-			</video>
-<nav class="wrapper">
-	            <div class="content fadetitle">
-            </div>
-	<div class="title fadetitle">
-		<span>loot#1337</span>
-	</div>
-<div class="menu fadelinks">
-	<div class="link grow hvr-overline-from-center"><a class="fab fa-discord" href="https://discord.com/users/906671274313535529" target="_blank"></a></div>
-	<div class="link grow hvr-overline-from-center"><a class="fas fa-money-bill-wave" href="https://discord.gg/czbyZEbArC" target="_blank"></a></div>
-	<div class="link grow hvr-overline-from-center"><a class="fas fa-link" href="https://t.me/gorepage" target="_blank"></a></div>
-</div>
-				<input
-					type="range"
-					class="form-range"
-					id="vol-control"
-					min="0"
-					max="100"
-					step="1"
-				/>
-			</div>
-
-		<script src="assets/js/main.js" type="cc1e080ef27d9851d0e62b5f-text/javascript"></script>
-		<script src="assets/js/slider.js" type="cc1e080ef27d9851d0e62b5f-text/javascript"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" type="cc1e080ef27d9851d0e62b5f-text/javascript"></script>
-	<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="cc1e080ef27d9851d0e62b5f-|49" defer=""></script></body>
 </html>
+
